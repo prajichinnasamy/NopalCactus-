@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NopalCactusIndia – Spineless Cactus | Home</title>
+  <meta name="description" content="NopalCactusIndia – From Desert Plant to Future Green Gold. Spineless Cactus Farm in Tamil Nadu, India." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-green': '#1b5e20',
+            'brand-green-dark': '#134e1e',
+            'brand-green-mid': '#2e7d32',
+            'brand-orange': '#e85d04',
+            'brand-pale': '#f7faf7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Tamil', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .card-border { border: 1px solid #e2ece2; background: #ffffff; border-radius: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: all 0.2s ease-in-out; }
+    .card-border:hover { box-shadow: 0 8px 24px rgba(27,94,32,0.08); transform: translateY(-2px); }
+    .table-custom th, .table-custom td { padding: 8px 12px; font-size: 0.85rem; }
+    .table-custom tr:nth-child(even) { background-color: #f9fcf9; }
+    #back-to-top { transition: opacity 0.3s; }
+  </style>
+</head>
+<body class="bg-brand-pale text-gray-800 font-sans antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       1. TOP BAR (White background as in screenshot)
+  ═══════════════════════════════════════════ -->
+  <header class="bg-white border-b border-gray-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Logo + Taglines -->
+      <div class="flex items-center gap-3">
+        <a href="index.html"><img src="images/logo.png" alt="NopalCactus Logo" class="w-12 h-12 object-contain" /></a>
+        <div>
+          <div class="text-2xl font-black leading-tight tracking-tight">
+            <span class="text-[#1a4e23]">NopalCactus</span><span class="text-brand-orange">India</span>
+          </div>
+          <div class="text-xs text-gray-700 font-medium" data-i18n="topbar_sub">முள் இல்லாத சப்பாத்தி கள்ளி – Spineless Cactus</div>
+          <div class="text-xs text-gray-500 font-normal" data-i18n="topbar_tagline">From Desert Plant to Future Green Gold</div>
+        </div>
+      </div>
+
+      <!-- Right: Language Selector + Phone -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 text-xs font-semibold text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-200">
+          <button class="lang-btn font-bold text-[#1b5e20] underline transition" data-lang="ta">தமிழ்</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn hover:text-brand-green transition" data-lang="en">English</button>
+        </div>
+        <a href="tel:9600026269" class="bg-[#1b5e20] hover:bg-green-900 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-sm transition">
+          <i class="fas fa-phone-alt text-xs"></i> 9600026269
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       2. NAVBAR (Dark Forest Green)
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-[#134e1e] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-2.5">
+      <div class="hidden lg:flex items-center gap-1 flex-wrap font-medium text-sm">
+        <a href="index.html" class="nav-link px-3.5 py-1.5 rounded-lg bg-white/20 font-bold" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_about">About Us</a>
+        <a href="benefits.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_benefits">Benefits</a>
+        <a href="products.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_products">Products</a>
+        <a href="cultivation.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_cultivation">Cultivation</a>
+        <a href="uses.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_uses">Uses</a>
+        <a href="research.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_research">Research</a>
+        <a href="gallery.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_gallery">Gallery</a>
+        <a href="blog.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_blog">Blog</a>
+        <a href="contact.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-4 ml-auto lg:ml-0">
+        <a href="products.html" class="relative text-white text-base hover:text-orange-300 transition">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute -top-2 -right-2 bg-brand-orange text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center font-bold">0</span>
+        </a>
+        <button id="menu-btn" class="lg:hidden text-white text-xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#103e18] px-4 py-3 space-y-1">
+      <a href="index.html" class="block py-2 text-sm font-semibold border-b border-green-800" data-i18n="nav_home">Home</a>
+      <a href="about.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_about">About Us</a>
+      <a href="benefits.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_benefits">Benefits</a>
+      <a href="products.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_products">Products</a>
+      <a href="cultivation.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_cultivation">Cultivation</a>
+      <a href="uses.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_uses">Uses</a>
+      <a href="research.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_research">Research</a>
+      <a href="gallery.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_gallery">Gallery</a>
+      <a href="blog.html" class="block py-2 text-sm border-b border-green-800" data-i18n="nav_blog">Blog</a>
+      <a href="contact.html" class="block py-2 text-sm" data-i18n="nav_contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       3. HERO SECTION (Using Exact Uploaded Cactus Plantation Background)
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-14 md:py-20 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(10, 45, 15, 0.55), rgba(0, 0, 0, 0.2)), url('images/hero_farm_bg.jpg');">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 text-white">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-3">
+            <span class="text-white">NopalCactus</span><span class="text-brand-orange">India</span>
+          </h1>
+          <h2 class="text-2xl sm:text-3xl font-bold text-green-100 mb-2" data-i18n="hero_main_sub">
+            முள் இல்லாத சப்பாத்தி கள்ளி – Spineless Cactus
+          </h2>
+          <p class="text-base sm:text-lg text-white/90 font-medium mb-6" data-i18n="hero_tagline">
+            From Desert Plant to Future Green Gold
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 mb-8">
+            <a href="about.html" class="bg-[#1b5e20] hover:bg-green-800 text-white px-6 py-2.5 rounded-lg font-semibold text-sm shadow transition" data-i18n="btn_learn">
+              Learn More
+            </a>
+            <a href="products.html" class="bg-brand-orange hover:bg-orange-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm shadow transition" data-i18n="btn_products">
+              Our Products
+            </a>
+            <a href="contact.html" class="border-2 border-white/90 hover:bg-white hover:text-brand-green text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition" data-i18n="btn_contact">
+              Contact Us
+            </a>
+          </div>
+
+          <!-- 100 Acres Badge -->
+          <div class="inline-flex items-center gap-3 bg-[#134e1e]/90 border border-white/20 backdrop-blur-md px-5 py-2.5 rounded-xl shadow-lg">
+            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-300 text-xl">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div>
+              <div class="font-extrabold text-base leading-tight" data-i18n="hero_badge_title">100 Acres Cactus Farm</div>
+              <div class="text-xs text-green-200" data-i18n="hero_badge_loc">Perambalur, Tamil Nadu, India</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Carousel Card -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 bg-black/40 backdrop-blur-sm">
+            <img src="images/hero_slide_photo.png" alt="Cactus Superfood" class="w-full h-auto object-cover" />
+            <div class="p-4 text-white text-center bg-black/70">
+              <div class="text-xs font-semibold text-green-300 uppercase tracking-wide" data-i18n="slide_badge">Superfood | Sustainable | Innovative</div>
+              <div class="text-sm font-bold mt-1" data-i18n="slide_caption">அதிசயம் தரும் சப்பாத்தி கள்ளி எதிர்காலத்தின் பசுமை நம்பிக்கை</div>
+              <div class="flex justify-center gap-1.5 mt-2">
+                <span class="w-2 h-2 rounded-full bg-white"></span>
+                <span class="w-2 h-2 rounded-full bg-white/40"></span>
+                <span class="w-2 h-2 rounded-full bg-white/40"></span>
+                <span class="w-2 h-2 rounded-full bg-white/40"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       4. FLOATING FEATURE BAR (6 Items)
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 -mt-6 relative z-20">
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-leaf text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat1">Sustainable Farming</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-cow text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat2">Livestock Feed</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-mortar-pestle text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat3">Healthy Foods</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-spa text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat4">Herbal Benefits</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-shopping-bag text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat5">Eco Products</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-green-50/60 transition">
+          <i class="fas fa-globe-americas text-[#1b5e20] text-xl"></i>
+          <span class="text-xs font-bold text-gray-800" data-i18n="stat6">Climate Smart Agriculture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       5. SECTION 1: ABOUT + ANATOMY + PLANT FEATURES
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid lg:grid-cols-3 gap-6">
+
+      <!-- Card 1: What is Spineless Cactus? -->
+      <div class="card-border p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-base font-bold text-[#1b5e20] mb-3 leading-snug" data-i18n="about_sec_title">
+            முள் இல்லாத சப்பாத்தி கள்ளி என்றால் என்ன ?
+          </h3>
+          <div class="flex gap-3 items-start">
+            <p class="text-xs text-gray-600 leading-relaxed flex-1" data-i18n="about_sec_desc">
+              சப்பாத்தி கள்ளி (Opuntia ficus-indica) என்பது முள்ளில்லாத கள்ளி வகையைச் சேர்ந்த ஒரு மிகவும் பயனுள்ள தாவரமாகும். இது மெக்சிகோ மூலமாகக் கொண்டது. குறைந்த நீரில் வளரக்கூடிய இந்த தாவரம்: உணவு, கால்நடை தீவனம், மருந்து, அழகு சாதனப் பொருட்கள், தொழில்துறை பயன்பாடுகள் வரை பலவிதங்களில் பயன்படுகிறது.
+            </p>
+            <img src="images/about_cactus_clean.png" alt="Spineless Cactus" class="w-24 h-auto object-contain flex-shrink-0" />
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="about.html" class="inline-block bg-[#1b5e20] hover:bg-green-800 text-white text-xs font-semibold px-4 py-2 rounded-md shadow-sm transition" data-i18n="about_btn">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Cactus Anatomy & Illustration -->
+      <div class="card-border p-6 flex flex-col items-center">
+        <h3 class="text-base font-bold text-[#1b5e20] mb-3 text-center w-full" data-i18n="anatomy_sec_title">
+          Cactus Anatomy & Illustration
+        </h3>
+        <img src="images/cactus_anatomy.png" alt="Cactus Anatomy Diagram" class="w-full max-h-56 object-contain rounded-lg" />
+      </div>
+
+      <!-- Card 3: Plant Key Features (10 checkmarks) -->
+      <div class="card-border p-6">
+        <h3 class="text-base font-bold text-[#1b5e20] mb-3" data-i18n="features_sec_title">
+          தாவரத்தின் முக்கிய அம்சங்கள்
+        </h3>
+        <ul class="space-y-1.5 text-xs text-gray-700">
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat1">குறைந்த நீர் தேவையை உடையது</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat2">வறட்சியை தாங்கும் திறன் அதிகம்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat3">அதிக உயிர் பொருள் (Biomass)</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat4">கார்பன் சேமிக்கும் திறன்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat5">மண் பாதுகாப்பிற்கு உதவும்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat6">நீண்ட காலம் உற்பத்தி தரும்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat7">சத்துக்கள் நிறைந்த தாவரம்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat8">கால்நடை தீவனத்திற்கு ஏற்றது</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat9">தொழில்துறை பயன்பாடுகள் அதிகம்</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-check-circle text-[#1b5e20]"></i><span data-i18n="feat10">காலநிலை மாற்றத்திற்கான சிறந்த தேர்வு</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       6. SECTION 2: NUTRITION & BENEFITS (4 Cards)
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1: Pad Nutrition -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="nut_pad_title">
+          சத்து மதிப்பு (Cactus Pad – 100g)
+        </h4>
+        <div class="flex gap-2 items-center">
+          <table class="w-full text-[11px] text-gray-700">
+            <tbody class="divide-y divide-gray-100">
+              <tr><td data-i18n="nut_cal">கலோரி</td><td class="font-bold text-right">16 kcal</td></tr>
+              <tr><td data-i18n="nut_fib">நார்ச்சத்து</td><td class="font-bold text-right">3.6 g</td></tr>
+              <tr><td data-i18n="nut_pro">புரதம்</td><td class="font-bold text-right">0.9 g</td></tr>
+              <tr><td data-i18n="nut_carb">கார்போஹைட்ரேட்</td><td class="font-bold text-right">3.4 g</td></tr>
+              <tr><td data-i18n="nut_calc">கால்சியம்</td><td class="font-bold text-right">80 mg</td></tr>
+              <tr><td data-i18n="nut_iron">இரும்புச்சத்து</td><td class="font-bold text-right">1.1 mg</td></tr>
+              <tr><td data-i18n="nut_mag">மக்னீசியம்</td><td class="font-bold text-right">85 mg</td></tr>
+              <tr><td data-i18n="nut_pot">பொட்டாசியம்</td><td class="font-bold text-right">220 mg</td></tr>
+              <tr><td data-i18n="nut_vitc">வைட்டமின் C</td><td class="font-bold text-right">14 mg</td></tr>
+            </tbody>
+          </table>
+          <img src="images/nutrition_pad.png" alt="Cactus Pad" class="w-16 h-auto object-contain flex-shrink-0" />
+        </div>
+      </div>
+
+      <!-- Card 2: Fruit Nutrition -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="nut_fruit_title">
+          சத்து மதிப்பு (Cactus Fruit – 100g)
+        </h4>
+        <div class="flex gap-2 items-center">
+          <table class="w-full text-[11px] text-gray-700">
+            <tbody class="divide-y divide-gray-100">
+              <tr><td data-i18n="nut_cal">கலோரி</td><td class="font-bold text-right">41 kcal</td></tr>
+              <tr><td data-i18n="nut_fib">நார்ச்சத்து</td><td class="font-bold text-right">2.6 g</td></tr>
+              <tr><td data-i18n="nut_pro">புரதம்</td><td class="font-bold text-right">0.7 g</td></tr>
+              <tr><td data-i18n="nut_carb">கார்போஹைட்ரேட்</td><td class="font-bold text-right">9.6 g</td></tr>
+              <tr><td data-i18n="nut_vitc">வைட்டமின் C</td><td class="font-bold text-right">22 mg</td></tr>
+              <tr><td data-i18n="nut_calc">கால்சியம்</td><td class="font-bold text-right">60 mg</td></tr>
+              <tr><td data-i18n="nut_iron">இரும்புச்சத்து</td><td class="font-bold text-right">0.7 mg</td></tr>
+              <tr><td data-i18n="nut_pot">பொட்டாசியம்</td><td class="font-bold text-right">257 mg</td></tr>
+              <tr><td data-i18n="nut_antiox">ஆன்டி-ஆக்சிடன்ட்</td><td class="font-bold text-right text-brand-orange" data-i18n="nut_high">அதிகம்</td></tr>
+            </tbody>
+          </table>
+          <img src="images/nutrition_fruit.png" alt="Cactus Fruit" class="w-20 h-auto object-contain flex-shrink-0" />
+        </div>
+      </div>
+
+      <!-- Card 3: Pad Benefits -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="ben_pad_title">
+          முக்கிய நன்மைகள் (Pad)
+        </h4>
+        <ul class="space-y-2.5 text-xs text-gray-700">
+          <li class="flex items-center gap-2.5"><i class="fas fa-heartbeat text-red-600"></i><span data-i18n="ben_pad1">இரத்த சர்க்கரை கட்டுப்பாடு</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-leaf text-green-600"></i><span data-i18n="ben_pad2">நார்ச்சத்து அதிகம்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-brain text-purple-600"></i><span data-i18n="ben_pad3">ஜீரணத்திற்கு உதவும்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-weight text-blue-600"></i><span data-i18n="ben_pad4">எடைக் குறைக்க உதவும்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-shield-alt text-emerald-600"></i><span data-i18n="ben_pad5">கொலஸ்ட்ரால் குறைக்கும்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-tint text-cyan-600"></i><span data-i18n="ben_pad6">நோய் எதிர்ப்பு சக்தி அதிகரிக்கும்</span></li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Fruit Benefits -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="ben_fruit_title">
+          கனி (Fruit) நன்மைகள்
+        </h4>
+        <ul class="space-y-2.5 text-xs text-gray-700">
+          <li class="flex items-center gap-2.5"><i class="fas fa-shield-virus text-green-600"></i><span data-i18n="ben_fruit1">ஆன்டி-ஆக்சிடன்ட் அதிகம்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-sun text-amber-500"></i><span data-i18n="ben_fruit2">வைட்டமின் C நிறைந்தது</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-snowflake text-blue-500"></i><span data-i18n="ben_fruit3">உடலுக்கு குளிர்ச்சி தரும்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-water text-cyan-500"></i><span data-i18n="ben_fruit4">நீர்ச்சத்து அதிகம்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-magic text-pink-500"></i><span data-i18n="ben_fruit5">சரும ஆரோக்கியத்திற்கு உதவும்</span></li>
+          <li class="flex items-center gap-2.5"><i class="fas fa-bolt text-yellow-500"></i><span data-i18n="ben_fruit6">இயற்கை எரிசக்தி தரும்</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       7. SECTION 3: USES FLOW + SPECIAL PRODUCTS
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid lg:grid-cols-12 gap-6">
+
+      <!-- Left: Uses & Applications (6 steps with arrows) -->
+      <div class="lg:col-span-5 card-border p-6">
+        <h3 class="text-base font-bold text-[#1b5e20] mb-5 text-center" data-i18n="uses_sec_title">
+          பயன்பாடுகள் (Uses & Applications)
+        </h3>
+        <div class="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-3 gap-4 text-center">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use1">உணவு துறை</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-cow"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use2">கால்நடை தீவனம்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-pills"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use3">மருத்துவ பயன்பாடு</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-spa"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use4">அழகு சாதன பொருட்கள்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-industry"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use5">தொழில்துறை பயன்பாடு</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full border-2 border-[#1b5e20] flex items-center justify-center text-[#1b5e20] text-lg bg-green-50 mb-1">
+              <i class="fas fa-tractor"></i>
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="use6">விவசாய பயன்பாடு</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Our Special Products (6 Image Cards) -->
+      <div class="lg:col-span-7 card-border p-6">
+        <h3 class="text-base font-bold text-[#1b5e20] mb-5 text-center" data-i18n="prod_sec_title">
+          சிறப்பு தயாரிப்புகள் (Our Special Products)
+        </h3>
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-3 text-center">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_powder.png" alt="Cactus Powder" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod1">கள்ளி பொடி</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_jam.png" alt="Cactus Jam" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod2">கள்ளி ஜாம்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_chips.png" alt="Cactus Chips" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod3">கள்ளி சிப்ஸ்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_juice.png" alt="Cactus Juice" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod4">கள்ளி சாறு</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_mucilage.png" alt="Mucilage" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod5">மியூசிலேஜ்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-1.5">
+              <img src="images/prod_leather.png" alt="Vegan Leather" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-bold text-gray-800" data-i18n="prod6">வீகன் லெதர்</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       8. SECTION 4: CULTIVATION FLOW & 3 MATRICES
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid lg:grid-cols-12 gap-6">
+
+      <!-- Left: Cultivation Process (8 Steps exactly as in Screenshot 3) -->
+      <div class="lg:col-span-6 card-border p-6">
+        <h3 class="text-base font-bold text-[#1b5e20] mb-5 text-center" data-i18n="cult_sec_title">
+          சாகுபடி தகவல்கள் (Cultivation Information)
+        </h3>
+        <div class="grid grid-cols-4 gap-4 text-center">
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-mountain"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult1">நிலம் தயாரித்தல்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult2">நடவு</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-tint"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult3">நீர் மேலாண்மை</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult4">பராமரிப்பு</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-cut"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult5">அறுவடை</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-sun"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult6">சூரிய உலர்த்தல்</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult7">செயல் முறை</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-11 h-11 rounded-full bg-[#1b5e20] text-white flex items-center justify-center text-sm font-bold mb-1 shadow-sm">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <span class="text-[10px] font-semibold text-gray-800" data-i18n="cult8">மதிப்பு கூட்டல் தயாரிப்புகள்</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 3 Topic Columns -->
+      <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        
+        <!-- Value Added Products -->
+        <div class="card-border p-4">
+          <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="val_prod_title">
+            மதிப்பு கூட்டப்பட்ட தயாரிப்புகள் (Value Added Products)
+          </h4>
+          <ul class="space-y-1.5 text-xs text-gray-700">
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="val1">பொடி</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="val2">சூப்பர்ஃபுட்ஸ்</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="val3">ஜெல்லி / கம்மீஸ்</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="val4">கேப்சூல் / மாத்திரை</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="val5">வீகன் லெதர்</span></li>
+          </ul>
+        </div>
+
+        <!-- Health Benefits -->
+        <div class="card-border p-4">
+          <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="health_ben_title">
+            ஆரோக்கிய நன்மைகள் (Health Benefits)
+          </h4>
+          <ul class="space-y-1.5 text-xs text-gray-700">
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="hb1">மருத்துவ குணங்கள்</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="hb2">இரத்த சர்க்கரை குறைப்பு</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="hb3">இதய ஆரோக்கியம்</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="hb4">செரிமானத்தை மேம்படுத்தும்</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="hb5">நீரேற்றம் & சத்துச்சேகரித்து</span></li>
+          </ul>
+        </div>
+
+        <!-- Research & Studies -->
+        <div class="card-border p-4">
+          <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="res_topics_title">
+            ஆராய்ச்சி & ஆய்வுகள் (Research & Studies)
+          </h4>
+          <ul class="space-y-1.5 text-xs text-gray-700">
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="res1">மருத்துவ ஆராய்ச்சி</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="res2">கால்நடை ஆராய்ச்சி</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="res3">மியூசிலேஜ் ஆய்வு</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="res4">சர்க்கரை நோய் ஆய்வு</span></li>
+            <li class="flex items-center gap-1.5"><i class="fas fa-check text-green-600 text-[10px]"></i><span data-i18n="res5">காலநிலை மாற்ற ஆய்வு</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       9. SECTION 5: COUNTRY WISE NAMES (2 Tables)
+  ═══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 py-4 mb-8">
+    <div class="grid lg:grid-cols-2 gap-6">
+
+      <!-- Left Table: Pad Country Wise Names -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="table_pad_title">
+          Pad மாற்று பெயர்கள் (Country Wise)
+        </h4>
+        <div class="overflow-x-auto">
+          <table class="w-full table-custom">
+            <thead>
+              <tr class="bg-green-50/70 text-[#1b5e20] text-left">
+                <th data-i18n="th_country">Country</th>
+                <th data-i18n="th_local">Local Name</th>
+                <th data-i18n="th_english">English Name</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 text-gray-700">
+              <tr><td>🇲🇽 Mexico</td><td>Nopal / Nopales</td><td>Nopal</td></tr>
+              <tr><td>🇪🇸 Spain</td><td>Chumbera</td><td>Prickly Pear Pad</td></tr>
+              <tr><td>🇺🇸 USA</td><td>Nopal / Cactus Pad</td><td>Prickly Pear Pad</td></tr>
+              <tr><td>🇧🇷 Brazil</td><td>Palma Forrageira</td><td>Forage Cactus</td></tr>
+              <tr><td>🇮🇳 India</td><td>சப்பாத்தி கள்ளி</td><td>Spineless Cactus</td></tr>
+              <tr><td>🇦🇺 Australia</td><td>Prickly Pear Pad</td><td>Prickly Pear Pad</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Right Table: Fruit Country Wise Names + Image -->
+      <div class="card-border p-5">
+        <h4 class="text-xs font-bold text-[#1b5e20] mb-3 text-center border-b pb-1.5" data-i18n="table_fruit_title">
+          Fruit மாற்று பெயர்கள் (Country Wise)
+        </h4>
+        <div class="flex flex-col sm:flex-row gap-3 items-center">
+          <div class="overflow-x-auto w-full">
+            <table class="w-full table-custom">
+              <thead>
+                <tr class="bg-green-50/70 text-[#1b5e20] text-left">
+                  <th data-i18n="th_country">Country</th>
+                  <th data-i18n="th_local">Local Name</th>
+                  <th data-i18n="th_english">English Name</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 text-gray-700">
+                <tr><td>🇲🇽 Mexico</td><td>Tuna</td><td>Prickly Pear Fruit</td></tr>
+                <tr><td>🇪🇸 Spain</td><td>Tuna</td><td>Prickly Pear Fruit</td></tr>
+                <tr><td>🇺🇸 USA</td><td>Prickly Pear</td><td>Prickly Pear Fruit</td></tr>
+                <tr><td>🇮🇹 Italy</td><td>Fico d'India</td><td>Prickly Pear Fruit</td></tr>
+                <tr><td>🇫🇷 France</td><td>Figue de Barbarie</td><td>Prickly Pear Fruit</td></tr>
+                <tr><td>🇮🇳 India</td><td>சப்பாத்தி கள்ளி கனி</td><td>Spineless Cactus Fruit</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <img src="images/country_fruit.png" alt="Prickly Pear Fruits" class="w-28 sm:w-36 h-auto object-contain flex-shrink-0" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       10. FOOTER (Dark Forest Green)
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-[#134e1e] text-white pt-12 pb-6 border-t-4 border-brand-orange">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 mb-8 text-xs text-green-100">
+
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-1">
+          <div class="text-lg font-black text-white mb-1">NopalCactusIndia</div>
+          <div class="text-xs font-semibold text-green-200" data-i18n="topbar_sub">முள் இல்லாத சப்பாத்தி கள்ளி</div>
+          <div class="text-[11px] text-green-300 mb-2">Spineless Cactus</div>
+          <p class="text-[11px] text-green-300 leading-tight mb-2" data-i18n="slide_badge">Superfood | Sustainable | Innovative</p>
+          <p class="text-[11px] text-green-300 leading-tight mb-3" data-i18n="topbar_tagline">From Desert Plant to Future Green Gold</p>
+          <!-- Social Icons -->
+          <div class="flex gap-2">
+            <a href="#" class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-[11px]"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@nopalcactusfarm" target="_blank" class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-[11px]"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="w-6 h-6 rounded-full bg-pink-600 flex items-center justify-center text-white text-[11px]"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919600026269" target="_blank" class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-[11px]"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2.5" data-i18n="footer_quick_links">Quick Links</h5>
+          <ul class="space-y-1.5 text-green-200">
+            <li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About Us</a></li>
+            <li><a href="benefits.html" class="hover:text-white transition" data-i18n="nav_benefits">Benefits</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="nav_products">Products</a></li>
+            <li><a href="cultivation.html" class="hover:text-white transition" data-i18n="nav_cultivation">Cultivation</a></li>
+            <li><a href="uses.html" class="hover:text-white transition" data-i18n="nav_uses">Uses</a></li>
+            <li><a href="blog.html" class="hover:text-white transition" data-i18n="nav_blog">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Products -->
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2.5" data-i18n="footer_our_products">Our Products</h5>
+          <ul class="space-y-1.5 text-green-200">
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod1">Cactus Powder</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod3">Cactus Chips</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod2">Cactus Jam</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod5">Mucilage</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod4">Cactus Juice</a></li>
+            <li><a href="products.html" class="hover:text-white transition" data-i18n="prod6">Vegan Leather</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Research -->
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2.5" data-i18n="footer_research">Research</h5>
+          <ul class="space-y-1.5 text-green-200">
+            <li><a href="research.html" class="hover:text-white transition" data-i18n="hb1">Health Benefits</a></li>
+            <li><a href="research.html" class="hover:text-white transition" data-i18n="res2">Livestock Studies</a></li>
+            <li><a href="research.html" class="hover:text-white transition" data-i18n="res4">Scientific Papers</a></li>
+            <li><a href="research.html" class="hover:text-white transition" data-i18n="res5">Climate Research</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact Us -->
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2.5" data-i18n="footer_contact_us">Contact Us</h5>
+          <div class="space-y-2 text-green-200 text-[11px]">
+            <p class="flex items-start gap-1.5">
+              <i class="fas fa-map-marker-alt text-brand-orange mt-0.5"></i>
+              <span><span data-i18n="footer_farm_name">SureshDevaraj Cactus Farm</span><br/><span data-i18n="footer_location_addr">Perambalur, Tamil Nadu, India</span></span>
+            </p>
+            <p class="flex items-center gap-1.5">
+              <i class="fas fa-phone-alt text-brand-orange"></i>
+              <a href="tel:9600026269" class="hover:text-white">9600026269</a>
+            </p>
+            <p class="flex items-center gap-1.5">
+              <i class="fas fa-globe text-brand-orange"></i>
+              <a href="http://nopalcactus.in/" target="_blank" class="hover:text-white">http://nopalcactus.in/</a>
+            </p>
+            <p class="flex items-center gap-1.5">
+              <i class="fab fa-youtube text-brand-orange"></i>
+              <a href="https://youtube.com/@nopalcactusfarm" target="_blank" class="hover:text-white">youtube.com/@nopalcactusfarm</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 6: Our Location & Map -->
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2.5" data-i18n="footer_location">Our Location</h5>
+          <div class="rounded-lg overflow-hidden border border-green-700 h-24 mb-2 shadow-sm">
+            <iframe src="https://maps.google.com/maps?q=Perambalur,Tamil+Nadu,India&z=10&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" title="Location Map"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Privacy Bar -->
+      <div class="border-t border-green-800/80 pt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-green-300 gap-2">
+        <div data-i18n="footer_rights">© 2024 NopalCactusIndia, All Rights Reserved.</div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white transition" data-i18n="footer_privacy">Privacy Policy</a>
+          <span>|</span>
+          <a href="#" class="hover:text-white transition" data-i18n="footer_terms">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sub-footer Black Bar -->
+  <div class="bg-black text-center py-2.5 text-xs text-gray-300 font-medium tracking-wide" data-i18n="footer_motto">
+    © 2026 NopalCactusIndia | Sustainable Future, Stronger India
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-[#1b5e20] hover:bg-[#134e1e] border-2 border-white text-white rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

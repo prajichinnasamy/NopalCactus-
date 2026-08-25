@@ -1,0 +1,10 @@
+# Netlify Pretty URLs / Clean Routing
+/about        /about.html        200
+/benefits     /benefits.html     200
+/products     /products.html     200
+/cultivation  /cultivation.html  200
+/uses         /uses.html         200
+/research     /research.html     200
+/gallery      /gallery.html      200
+/blog         /blog.html         200
+/contact      /contact.html      200

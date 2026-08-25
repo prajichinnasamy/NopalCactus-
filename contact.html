@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NopalCactusIndia – Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-green': '#1b5e20',
+            'brand-green-dark': '#134e1e',
+            'brand-orange': '#e85d04',
+            'brand-pale': '#f7faf7',
+          },
+          fontFamily: { sans: ['Inter', 'Noto Sans Tamil', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .card-border { border: 1px solid #e2ece2; background: #ffffff; border-radius: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: all 0.2s ease-in-out; }
+    .card-border:hover { box-shadow: 0 8px 24px rgba(27,94,32,0.08); transform: translateY(-2px); }
+    #back-to-top { transition: opacity 0.3s; }
+  </style>
+</head>
+<body class="bg-brand-pale text-gray-800 font-sans antialiased">
+
+  <!-- TOP BAR -->
+  <header class="bg-white border-b border-gray-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="index.html"><img src="images/logo.png" alt="NopalCactus Logo" class="w-12 h-12 object-contain" /></a>
+        <div>
+          <div class="text-2xl font-black leading-tight tracking-tight">
+            <span class="text-[#1a4e23]">NopalCactus</span><span class="text-brand-orange">India</span>
+          </div>
+          <div class="text-xs text-gray-700 font-medium" data-i18n="topbar_sub">முள் இல்லாத சப்பாத்தி கள்ளி – Spineless Cactus</div>
+          <div class="text-xs text-gray-500 font-normal" data-i18n="topbar_tagline">From Desert Plant to Future Green Gold</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 text-xs font-semibold text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-200">
+          <button class="lang-btn font-bold text-[#1b5e20] underline transition" data-lang="ta">தமிழ்</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn hover:text-brand-green transition" data-lang="en">English</button>
+        </div>
+        <a href="tel:9600026269" class="bg-[#1b5e20] hover:bg-green-900 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-sm transition">
+          <i class="fas fa-phone-alt text-xs"></i> 9600026269
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-[#134e1e] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-2.5">
+      <div class="hidden lg:flex items-center gap-1 flex-wrap font-medium text-sm">
+        <a href="index.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_about">About Us</a>
+        <a href="benefits.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_benefits">Benefits</a>
+        <a href="products.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_products">Products</a>
+        <a href="cultivation.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_cultivation">Cultivation</a>
+        <a href="uses.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_uses">Uses</a>
+        <a href="research.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_research">Research</a>
+        <a href="gallery.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_gallery">Gallery</a>
+        <a href="blog.html" class="nav-link px-3.5 py-1.5 rounded-lg hover:bg-white/15 transition" data-i18n="nav_blog">Blog</a>
+        <a href="contact.html" class="nav-link px-3.5 py-1.5 rounded-lg bg-white/20 font-bold" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-4 ml-auto lg:ml-0">
+        <a href="products.html" class="relative text-white text-base hover:text-orange-300 transition">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute -top-2 -right-2 bg-brand-orange text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center font-bold">0</span>
+        </a>
+        <button id="menu-btn" class="lg:hidden text-white text-xl focus:outline-none"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#103e18] px-4 py-3 space-y-1">
+      <a href="index.html" class="block py-2 text-sm" data-i18n="nav_home">Home</a>
+      <a href="about.html" class="block py-2 text-sm" data-i18n="nav_about">About Us</a>
+      <a href="benefits.html" class="block py-2 text-sm" data-i18n="nav_benefits">Benefits</a>
+      <a href="products.html" class="block py-2 text-sm" data-i18n="nav_products">Products</a>
+      <a href="cultivation.html" class="block py-2 text-sm" data-i18n="nav_cultivation">Cultivation</a>
+      <a href="uses.html" class="block py-2 text-sm" data-i18n="nav_uses">Uses</a>
+      <a href="research.html" class="block py-2 text-sm" data-i18n="nav_research">Research</a>
+      <a href="gallery.html" class="block py-2 text-sm" data-i18n="nav_gallery">Gallery</a>
+      <a href="blog.html" class="block py-2 text-sm" data-i18n="nav_blog">Blog</a>
+      <a href="contact.html" class="block py-2 text-sm font-bold" data-i18n="nav_contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="bg-gradient-to-r from-[#134e1e] to-[#1b5e20] text-white py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-extrabold mb-1" data-i18n="nav_contact">தொடர்பு கொள்ள (Contact Us)</h1>
+      <p class="text-green-200 text-sm" data-i18n="topbar_tagline">From Desert Plant to Future Green Gold</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+
+      <!-- Left: Form -->
+      <div class="card-border p-6 sm:p-8">
+        <h2 class="text-lg font-bold text-[#1b5e20] mb-5 border-b pb-2" data-i18n="btn_contact">தொடர்பு கொள்ள</h2>
+        <form id="contact-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1" data-i18n="form_name">உங்கள் பெயர்</label>
+            <input type="text" id="f-name" required data-i18n-ph="form_name" placeholder="உங்கள் பெயர்" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1b5e20] text-xs" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1" data-i18n="form_email">மின்னஞ்சல் முகவரி</label>
+            <input type="email" id="f-email" required data-i18n-ph="form_email" placeholder="மின்னஞ்சல் முகவரி" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1b5e20] text-xs" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1" data-i18n="form_phone">தொலைபேசி எண்</label>
+            <input type="tel" id="f-phone" required data-i18n-ph="form_phone" placeholder="தொலைபேசி எண்" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1b5e20] text-xs" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1" data-i18n="form_message">உங்கள் செய்தி</label>
+            <textarea id="f-message" rows="4" required data-i18n-ph="form_message" placeholder="உங்கள் செய்தி" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1b5e20] text-xs"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-brand-orange hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-xl transition duration-200 shadow-md flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="form_send">செய்தி அனுப்பவும்</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Details + Map -->
+      <div class="flex flex-col justify-between space-y-6">
+        <div class="card-border p-6 sm:p-8 space-y-4">
+          <h3 class="text-lg font-bold text-[#1b5e20] mb-2 border-b pb-2" data-i18n="footer_contact_us">தொடர்பு விவரங்கள்</h3>
+          
+          <div class="flex items-start gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 text-[#1b5e20]">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <div class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Address / முகவரி</div>
+              <div class="text-xs font-semibold text-gray-800 mt-0.5"><span data-i18n="footer_farm_name">SureshDevaraj Cactus Farm</span>, <span data-i18n="footer_location_addr">Perambalur, Tamil Nadu, India</span></div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 text-[#1b5e20]">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <div class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Phone / தொலைபேசி</div>
+              <a href="tel:9600026269" class="text-xs font-semibold text-gray-800 hover:text-brand-orange mt-0.5 block">9600026269</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 text-[#1b5e20]">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div>
+              <div class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Website / வலைத்தளம்</div>
+              <a href="http://nopalcactus.in/" target="_blank" class="text-xs font-semibold text-gray-800 hover:text-brand-orange mt-0.5 block">http://nopalcactus.in/</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 text-red-600">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div>
+              <div class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">YouTube</div>
+              <a href="https://youtube.com/@nopalcactusfarm" target="_blank" class="text-xs font-semibold text-gray-800 hover:text-brand-orange mt-0.5 block">@nopalcactusfarm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 h-56">
+          <iframe src="https://maps.google.com/maps?q=Perambalur,Tamil+Nadu,India&z=12&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#134e1e] text-white pt-10 pb-6 border-t-4 border-brand-orange">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 text-xs text-green-100">
+        <div>
+          <div class="text-base font-black text-white mb-1">NopalCactusIndia</div>
+          <div class="text-xs font-semibold text-green-200" data-i18n="topbar_sub">முள் இல்லாத சப்பாத்தி கள்ளி</div>
+          <p class="text-[11px] text-green-300 leading-tight mt-1 mb-3" data-i18n="topbar_tagline">From Desert Plant to Future Green Gold</p>
+          <div class="flex gap-2">
+            <a href="#" class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-[11px]"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@nopalcactusfarm" target="_blank" class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-[11px]"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919600026269" target="_blank" class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-[11px]"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2" data-i18n="footer_quick_links">Quick Links</h5>
+          <ul class="space-y-1 text-green-200">
+            <li><a href="index.html" class="hover:text-white" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="hover:text-white" data-i18n="nav_about">About Us</a></li>
+            <li><a href="benefits.html" class="hover:text-white" data-i18n="nav_benefits">Benefits</a></li>
+            <li><a href="products.html" class="hover:text-white" data-i18n="nav_products">Products</a></li>
+            <li><a href="contact.html" class="hover:text-white" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2" data-i18n="footer_contact_us">Contact</h5>
+          <p class="text-[11px] text-green-200 mb-1"><i class="fas fa-map-marker-alt text-brand-orange mr-1"></i> <span data-i18n="footer_farm_name">SureshDevaraj Cactus Farm</span>, <span data-i18n="footer_location_addr">Perambalur</span></p>
+          <p class="text-[11px] text-green-200"><i class="fas fa-phone-alt text-brand-orange mr-1"></i> 9600026269</p>
+        </div>
+        <div>
+          <h5 class="text-sm font-bold text-white mb-2" data-i18n="footer_location">Location</h5>
+          <div class="rounded-lg overflow-hidden border border-green-700 h-20">
+            <iframe src="https://maps.google.com/maps?q=Perambalur,Tamil+Nadu,India&z=10&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" title="Map"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-green-800 pt-3 flex items-center justify-between text-[11px] text-green-300">
+        <div data-i18n="footer_rights">© 2024 NopalCactusIndia, All Rights Reserved.</div>
+        <div class="text-right" data-i18n="footer_motto">© 2026 NopalCactusIndia</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-[#1b5e20] hover:bg-[#134e1e] border-2 border-white text-white rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
