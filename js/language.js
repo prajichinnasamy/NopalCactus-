@@ -1,12 +1,11 @@
 /**
  * language.js — NopalCactusIndia
  * Centralized Language Management System
+ * Supported: Tamil ('ta' - Default), English ('en'), Hindi ('hi')
  * Features:
- *  - Default Language: Tamil ('ta')
  *  - Persisted in localStorage ('nopal_lang')
- *  - Fallback safe (no undefined output, preserves existing text if key is missing)
- *  - Supports text ([data-i18n]), placeholders ([data-i18n-placeholder], [data-i18n-ph]),
- *    titles ([data-i18n-title]), alt text ([data-i18n-alt]), and aria-labels ([data-i18n-aria-label])
+ *  - Fallback safe (preserves text if key missing)
+ *  - Supports [data-i18n], [data-i18n-placeholder], [data-i18n-ph], [data-i18n-title], [data-i18n-alt]
  *  - Updates active button state
  */
 
@@ -14,7 +13,7 @@ const DEFAULT_LANG = 'ta';
 
 /**
  * Apply translation strings to the current DOM
- * @param {string} lang - 'ta' or 'en'
+ * @param {string} lang - 'ta', 'en', or 'hi'
  */
 function applyTranslations(lang) {
   if (typeof translations === 'undefined' || !translations[lang]) {
@@ -32,7 +31,7 @@ function applyTranslations(lang) {
     }
   });
 
-  // 2. Input/Textarea Placeholders: [data-i18n-placeholder] and [data-i18n-ph]
+  // 2. Placeholders: [data-i18n-placeholder] and [data-i18n-ph]
   document.querySelectorAll('[data-i18n-placeholder], [data-i18n-ph]').forEach((el) => {
     const key = el.getAttribute('data-i18n-placeholder') || el.getAttribute('data-i18n-ph');
     if (key && dict[key] !== undefined && dict[key] !== null) {
@@ -83,10 +82,10 @@ function applyTranslations(lang) {
 
 /**
  * Switch current language, persist choice, and update DOM
- * @param {string} lang - 'ta' or 'en'
+ * @param {string} lang - 'ta', 'en', or 'hi'
  */
 function changeLanguage(lang) {
-  const targetLang = (lang === 'en' || lang === 'ta') ? lang : DEFAULT_LANG;
+  const targetLang = (lang === 'en' || lang === 'ta' || lang === 'hi') ? lang : DEFAULT_LANG;
   try {
     localStorage.setItem('nopal_lang', targetLang);
   } catch (e) {
@@ -102,7 +101,7 @@ function initializeLanguage() {
   let currentLang = DEFAULT_LANG;
   try {
     const saved = localStorage.getItem('nopal_lang');
-    if (saved && (saved === 'en' || saved === 'ta')) {
+    if (saved && (saved === 'en' || saved === 'ta' || saved === 'hi')) {
       currentLang = saved;
     }
   } catch (e) {

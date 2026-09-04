@@ -1,4 +1,4 @@
-# Netlify Pretty URLs / Clean Routing
+# Clean URLs / Pretty URLs Configuration
 /about        /about.html        200
 /benefits     /benefits.html     200
 /products     /products.html     200
